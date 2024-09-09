@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Result</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('https://source.unsplash.com/1600x900/?data,technology');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #00796b;
+            color: white;
+            font-weight: 500;
+        }
+
+        td {
+            background-color: #f1f8e9;
+            color: #004d40;
+        }
+
+        tr:hover {
+            background-color: #e0f2f1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Submission Successful</h1>
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <%= name %>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <%= email %>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
